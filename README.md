@@ -34,7 +34,7 @@ Exploratory analysis showed that age and the number of products have non-linear 
 
 Four models were compared: logistic regression, decision tree, random forest and XGBoost. They were tuned with grid search using stratified 5-fold cross-validation on the training set. The test set was used once, at the end. Performance was measured with ROC-AUC, precision and recall, rather than accuracy alone, because most customers did not churn.
 
-XGBoost was selected as the final model becuse it  had the highest cross-validation AUC of 0.866 which was slightly  ahead of the random forest's 0.860
+XGBoost was selected as the final model because use it  had the highest cross-validation AUC of 0.866 which was slightly  ahead of the random forest's 0.860
 
 In cross-validation, the default threshold of 0.50 gave 48.0% recall and 75.8% precision. Lowering it to 0.15 raised recall to 82.1% and reduced precision to 44.3%. The lower threshold was chosen because identifying more potential churners was the main business priority, even if it meant flagging more customers who would have stayed.
 
